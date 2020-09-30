@@ -10,7 +10,6 @@ namespace Part_3
             string name;
             int age;
             int year;
-            int year_born;
 
             Console.WriteLine("Say hello!");
             response = Console.ReadLine();
@@ -25,9 +24,12 @@ namespace Part_3
             Console.WriteLine("What year is it?");
             year = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("So you're" + name);
-            Console.WriteLine("You are" + age);
-            Console.WriteLine("That means you were born in" + year_born);
+            Console.WriteLine(" ");
+
+
+            Console.WriteLine("So your name is " + name);
+            Console.WriteLine("and you claim to be " + age);
+            Console.WriteLine($"Which would mean you were born in " + (year - age));
             Console.ReadLine();
         }
     }
